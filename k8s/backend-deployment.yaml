@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: backend-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: backend
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: your-docker-username/backend:latest
+          image: saitejairrinki/3tierbackend:latest
           ports:
             - containerPort: 3000
 ---
